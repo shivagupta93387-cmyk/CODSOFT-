@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="calculator">
+            <div class="display-screen">
+                <div id="history-preview"></div>
+                <input type="text" id="display" placeholder="0" disabled>
+            </div>
+
+            <div class="buttons-grid">
+               
+                <button class="btn func" onclick="advancedMath('sin')">sin</button>
+                <button class="btn func" onclick="advancedMath('cos')">cos</button>
+                <button class="btn func" onclick="advancedMath('tan')">tan</button>
+                <button class="btn func" onclick="advancedMath('log')">log</button>
+
+                <button class="btn func" onclick="advancedMath('sqrt')">√</button>
+                <button class="btn func" onclick="advancedMath('pow')">x^y</button>
+                <button class="btn func" onclick="transport('(')">(</button>
+                <button class="btn func" onclick="transport(')')">)</button>
+
+                <button class="btn clear" onclick="clearDisplay()">AC</button>
+                <button class="btn delete" onclick="deleteLast()">DEL</button>
+                <button class="btn operator" onclick="transport('%')">%</button>
+                <button class="btn operator" onclick="transport('/')">÷</button>
+
+                <button class="btn number" onclick="transport('7')">7</button>
+                <button class="btn number" onclick="transport('8')">8</button>
+                <button class="btn number" onclick="transport('9')">9</button>
+                <button class="btn operator" onclick="transport('*')">×</button>
+
+                <button class="btn number" onclick="transport('4')">4</button>
+                <button class="btn number" onclick="transport('5')">5</button>
+                <button class="btn number" onclick="transport('6')">6</button>
+                <button class="btn operator" onclick="transport('-')">-</button>
+
+                <button class="btn number" onclick="transport('1')">1</button>
+                <button class="btn number" onclick="transport('2')">2</button>
+                <button class="btn number" onclick="transport('3')">3</button>
+                <button class="btn operator" onclick="transport('+')">+</button>
+
+                <button class="btn number zero" onclick="transport('0')">0</button>
+                <button class="btn number" onclick="transport('.')">.</button>
+                <button class="btn equal" onclick="calculate()">=</button>
+            </div>
+        </div>
+
+        <div class="history-panel">
+            <h3>History</h3>
+            <ul id="history-list">
+                
+            </ul>
+            <button class="clear-history" onclick="clearHistory()">Clear History</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
