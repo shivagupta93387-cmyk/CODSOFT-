@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container card">
+    <h2>Quiz Result</h2>
+    <h1 id="score"></h1>
+    <a class="btn" href="index.html">Go Home</a>
+</div>
+
+<script>
+document.getElementById("score").innerText =
+"Your Score: " + localStorage.getItem("score");
+</script>
+
+</body>
+</html>

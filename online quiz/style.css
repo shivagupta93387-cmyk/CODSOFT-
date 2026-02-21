@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial;
+}
+
+body {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+}
+
+.container {
+    text-align: center;
+    max-width: 400px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+h1, h2 {
+    color: #4b3f72;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+button, .btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-top: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #667eea;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+button:hover, .btn:hover {
+    background: #5a67d8;
+}
+
+.secondary {
+    background: #48bb78;
+}
+
+.secondary:hover {
+    background: #38a169;
+}
+
+.option {
+    background: #edf2f7;
+    color: #333;
+}
+
+.option:hover {
+    background: #c3dafe;
+}
+
+/* Mobile responsive */
+@media (max-width: 500px) {
+    .card {
+        margin: 15px;
+    }
+}
